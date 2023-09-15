@@ -1,0 +1,79 @@
+---CRUD of category---
+List of category:-  http://localhost:3000/catgory/catlist
+
+Get category by id:-http://localhost:3000/catgory/catbyid/<cid>
+
+Add category:-      http://localhost:3000/catgory/addcat
+
+Update category:-   http://localhost:3000/catgory/updatecat/<cid>
+
+Delete category:-   http://localhost:3000/catgory/deletecat/<cid>
+
+--json fromat for cat validation--
+{
+    "cat_name":"",
+    "cat_desc":"",
+    "status":""
+}
+
+---CRUD of post---
+list of all Post:-  http://localhost:3000/post/getallposts
+
+add Post:-          http://localhost:3000/post/addpost
+
+Update Post:-       http://localhost:3000/post/updatepost/<cid>
+
+Delete Post:-       http://localhost:3000/post/deletepost/<cid>
+
+--json fromat for post validation--
+{
+    "title":"xxxxx", 
+    "description":"xxxxx", 
+    "status":"1", 
+    "cat_id":"2", 
+    "auth_id":"2"
+}
+
+
+---CRUD of user---
+list of Users:-     http://localhost:3000/user/userlist
+
+Add User:-          http://localhost:3000/user/adduser
+
+Login User:-        http://localhost:3000/user/login
+--json fromat for user login--
+{
+    "email":"xxxx@gmail.com",
+    "password":"Admin123"
+}
+
+Update User:-       http://localhost:3000/user/updateuser/<cid>
+
+Delete User:-       http://localhost:3000/user/deleteuser/<cid>
+
+--json fromat for user validation--
+{
+    "fname":"xxxxx",
+    "lname":"xxxxx",
+    "email":"xxxx@gmail.com",
+    "password":"Admin123",
+    "phone":"xxxxxxxxxx",
+    "address":"xxxxxx",
+    "status":"x"
+}
+
+
+[
+    {
+        "id": 3,
+        "fname": "Vibhanshu",
+        "lname": "Bhoyar",
+        "email": "vibhanshu@gmail.com",
+        "password": "e64b78fc3bc91bcbc7dc232ba8ec59e0",
+        "phone": 1234123412,
+        "address": "34,sdfslkjf,flksdjflskd,lksdfjl",
+        "status": "1",
+        "created": "2023-09-11T18:30:00.000Z",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMsImVtYWlsIjoidmliaGFuc2h1QGdtYWlsLmNvbSIsImlhdCI6MTY5NDY4NDUzMCwiZXhwIjoxNjk0NjkxNzMwfQ.VjYkbRNWVx3tsVnZgNbDlIeTPQUZCDEEgyC1EEKVd1Q"
+    }
+]
